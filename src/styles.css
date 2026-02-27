@@ -1,0 +1,65 @@
+/* =============================================
+   GLOBAL STYLES - Damjan Pandzarov CV
+   Dark Terminal / DevOps Aesthetic
+   ============================================= */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary: #080c10;
+  --bg-secondary: #0d1117;
+  --bg-card: #111820;
+  --bg-card-hover: #151e28;
+  --accent-cyan: #00e5ff;
+  --accent-green: #39ff14;
+  --accent-blue: #4d8af0;
+  --accent-dim: #1a3a5c;
+  --text-primary: #e8edf2;
+  --text-secondary: #7a8fa6;
+  --text-muted: #3d5166;
+  --border: #1c2d3f;
+  --border-bright: #2a4060;
+  --font-mono: 'Space Mono', monospace;
+  --font-sans: 'Syne', sans-serif;
+  --glow-cyan: 0 0 20px rgba(0, 229, 255, 0.3);
+  --glow-green: 0 0 20px rgba(57, 255, 20, 0.25);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--accent-dim); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent-cyan); }
+
+/* Selection */
+::selection {
+  background: rgba(0, 229, 255, 0.2);
+  color: var(--accent-cyan);
+}
+
+a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--text-primary);
+}
